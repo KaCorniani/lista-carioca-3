@@ -1,0 +1,16 @@
+ int[] n = new int[10];
+            for (int i = 0; i < n.Length; i++)
+            {
+                Console.WriteLine("Digite um número: ");
+                n[i] = int.Parse(Console.ReadLine());
+               
+                if(n[i] < 0)
+                {
+                    n[i] = 0;
+                }     
+            }
+            Console.WriteLine("Valores corrigidos: ");
+            for (int i = 0; i < n.Length; i++)
+            {
+                Console.WriteLine(n[i]);
+            }
